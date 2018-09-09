@@ -156,6 +156,10 @@
       <Project>{021FFA6C-B2B7-4310-A0BD-FD1CF740BE71}</Project>
       <Name>XamApp</Name>
     </ProjectReference>
+    <ProjectReference Include="..\XamMaket\XamMaket.csproj">
+      <Project>{3eb81a93-f33f-4d7e-b6c1-ea7d1f32f763}</Project>
+      <Name>XamMaket</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

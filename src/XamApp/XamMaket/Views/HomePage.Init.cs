@@ -1,11 +1,11 @@
 ﻿
 using Xamarin.Forms;
 
-namespace XamApp.Views
+namespace XamMaket.Views
 {
-    public class MainPage1 : ContentPage
+    public partial class HomePage
     {
-        public MainPage1()
+        private void Init()
         {
             Content = new StackLayout
             {

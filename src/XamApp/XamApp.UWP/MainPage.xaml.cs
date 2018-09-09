@@ -21,7 +21,7 @@ namespace XamApp.UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new XamApp.App());
+            LoadApplication(new XamMaket.App());
         }
     }
 }
