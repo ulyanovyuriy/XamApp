@@ -9,7 +9,7 @@ namespace XamMaket
         {
             Init();
 
-            MainPage = new HomePage();
+            MainPage = new MenuPage();
         }
     }
 }
