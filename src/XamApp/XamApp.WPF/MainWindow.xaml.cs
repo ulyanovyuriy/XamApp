@@ -14,7 +14,7 @@ namespace XamApp.WPF
 
             Forms.Init();
 
-            LoadApplication(new XamApp.App());
+            LoadApplication(new XamMaket.App());
         }
     }
 }

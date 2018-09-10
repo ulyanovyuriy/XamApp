@@ -7,10 +7,12 @@ namespace XamMaket.Views
     {
         private void Init()
         {
+            Icon = (FileImageSource)FileImageSource.FromFile("Resources/menu.png");
+
             Content = new StackLayout
             {
                 Children = {
-                    new Label { Text = "Welcome to Xamarin.Forms!" }
+                    new Label { Text = "1" }
                 }
             };
         }

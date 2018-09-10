@@ -125,6 +125,13 @@
       <Project>{68955437-a76e-4b3f-b9df-a4c2f9368e43}</Project>
       <Name>XamApp</Name>
     </ProjectReference>
+    <ProjectReference Include="..\XamMaket\XamMaket.csproj">
+      <Project>{3eb81a93-f33f-4d7e-b6c1-ea7d1f32f763}</Project>
+      <Name>XamMaket</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
