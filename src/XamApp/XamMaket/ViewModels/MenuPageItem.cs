@@ -8,8 +8,6 @@ namespace XamMaket.ViewModels
 
         public string Icon { get; set; }
 
-        public Type PageType { get; set; }
-
         public MenuPageItemType Type { get; set; }
     }
 }

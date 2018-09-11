@@ -8,5 +8,6 @@ namespace XamMaket.ViewModels
     {
         None = 0,
         Home = 1,
+        Cards = 2,
     }
 }

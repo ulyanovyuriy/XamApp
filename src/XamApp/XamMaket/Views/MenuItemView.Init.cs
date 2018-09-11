@@ -8,9 +8,11 @@ namespace XamMaket.Views
     {
         private void Init()
         {
+            HorizontalOptions = LayoutOptions.Start;
+
             var grid = new Grid()
             {
-                Margin = new Thickness(0, 0, 12, 0),
+                Margin = new Thickness(5, 10),
                 ColumnDefinitions = new ColumnDefinitionCollection()
                 {
                     new ColumnDefinition(){ Width = 30},
@@ -18,7 +20,7 @@ namespace XamMaket.Views
                 },
                 RowDefinitions = new RowDefinitionCollection()
                 {
-                    new RowDefinition(){ Height = 48}
+                    new RowDefinition(){ Height = 36}
                 }
             };
 

@@ -16,9 +16,14 @@ namespace XamMaket.ViewModels
                 {
                     Title = "Домашняя",
                     Icon = "Images/home.png",
-                    PageType = typeof(HomePage),
                     Type = MenuPageItemType.Home,
                 },
+                new MenuPageItem()
+                {
+                    Title = "Карты",
+                    Icon = "Images/credit-card.png",
+                    Type = MenuPageItemType.Cards,
+                }
             };
         }
 

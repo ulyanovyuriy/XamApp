@@ -11,6 +11,7 @@ namespace XamMaket.Views
         {
             Title = " ";
             BackgroundColor = ThemeColors.Toolbar;
+            Padding = new Thickness(0, 40, 0, 0);
 
             Content = new StackLayout
             {
@@ -29,8 +30,7 @@ namespace XamMaket.Views
                             };
                         }),
                     }
-                }
-
+                },
             };
         }
     }
