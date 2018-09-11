@@ -11,17 +11,11 @@ namespace XamMaket.Views
     {
         private void Init()
         {
-            Title = "Главная";
-            Icon = (FileImageSource)FileImageSource.FromFile("menu.png");
+            MasterBehavior = MasterBehavior.Popover;
 
-            Content = new StackLayout
-            {
-                Children =
-                {
-                    new Label { Text = "2" },
-                    //new Image(){ Source = FileImageSource.FromResource("XamMaket.menu.png")},
-                }
-            };
+            Master = new MenuPage(ViewModel.Menu);
+
+            Detail = new DetailPage();
         }
     }
 }

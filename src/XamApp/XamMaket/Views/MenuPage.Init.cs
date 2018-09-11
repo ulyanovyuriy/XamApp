@@ -1,6 +1,7 @@
 ﻿
 using System.IO;
 using Xamarin.Forms;
+using XamMaket.Settings;
 
 namespace XamMaket.Views
 {
@@ -8,8 +9,8 @@ namespace XamMaket.Views
     {
         private void Init()
         {
-            Padding = new Thickness(0, 40, 0, 0);
-            Title = "Приложение";
+            Title = " ";
+            BackgroundColor = ThemeColors.Toolbar;
 
             Content = new StackLayout
             {
@@ -17,12 +18,15 @@ namespace XamMaket.Views
                 {
                     new ListView()
                     {
-                        ItemsSource = GetItems(),
+                        BackgroundColor = ThemeColors.MenuBackground,
+                        SeparatorVisibility = SeparatorVisibility.None,
+                        ItemsSource = ViewModel.Items,
                         ItemTemplate = new DataTemplate(() =>
                         {
-                            var grid = new Grid() { Padding = new Thickness(5,10) };
-                            //grid.ColumnDefinitions.Add(new ColumnDefinition(){ });
-                            return new ViewCell() { View = grid };
+                            return new ViewCell()
+                            {
+                                View = new MenuItemView()
+                            };
                         }),
                     }
                 }

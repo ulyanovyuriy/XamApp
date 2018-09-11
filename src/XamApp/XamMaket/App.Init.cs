@@ -1,4 +1,5 @@
 ﻿using Xamarin.Forms;
+using XamMaket.Settings;
 
 namespace XamMaket
 {
@@ -12,12 +13,12 @@ namespace XamMaket
             style.Setters.Add(new Setter()
             {
                 Property = NavigationPage.BarBackgroundColorProperty,
-                Value = Color.FromHex("#2196F3")
+                Value = ThemeColors.Toolbar,
             });
             style.Setters.Add(new Setter()
             {
                 Property = NavigationPage.BarTextColorProperty,
-                Value = Color.White
+                Value = ThemeColors.White
             });
             Resources.Add(style);
         }
