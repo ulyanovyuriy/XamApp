@@ -10,10 +10,8 @@ namespace XamMaket.Views
 {
     public partial class MenuPage : ContentPage
     {
-        public MenuPage(MenuPageViewModel viewModel)
+        public MenuPage()
         {
-            BindingContext = viewModel ?? throw new ArgumentNullException(nameof(viewModel));
-
             Init();
         }
 

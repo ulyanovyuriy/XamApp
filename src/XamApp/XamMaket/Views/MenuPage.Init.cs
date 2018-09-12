@@ -25,10 +25,11 @@ namespace XamMaket.Views
                         View = new MenuItemView()
                     };
                 }),
+                SelectionMode = ListViewSelectionMode.None,
             };
 
             listView.SetBinding(ListView.ItemsSourceProperty, nameof(ViewModel.Items));
-            listView.ItemSelected += ListView_ItemSelected;
+            listView.ItemTapped += ListView_ItemTapped;
             Content = new StackLayout
             {
                 Children =
@@ -38,9 +39,9 @@ namespace XamMaket.Views
             };
         }
 
-        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            ViewModel.ItemSelectedCommand.Execute(e.SelectedItem);
+            ViewModel.ItemSelectedCommand.Execute(e.Item);
         }
     }
 }

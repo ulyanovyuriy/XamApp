@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Xamarin.Forms;
+using XamMaket.Services;
 using XamMaket.ViewModels;
 using XamMaket.Views;
 
@@ -13,7 +14,12 @@ namespace XamMaket
         {
             Init();
 
-            MainPage = new MainPage(new MainPageViewModel());
+            MainPage = new MainPage() { BindingContext = new MainPageViewModel() };
+        }
+
+        protected override async void OnStart()
+        {
+            await ServiceExecutor.Default.ExecuteAsync<INavigationService>(n => n.NavigateToAsync(MenuPageItemType.Home));
         }
 
         public new MainPage MainPage

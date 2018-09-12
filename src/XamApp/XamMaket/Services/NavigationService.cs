@@ -28,8 +28,9 @@ namespace XamMaket.Services
             if (current != page)
             {
                 mdp.Detail = page;
-                mdp.IsPresented = false;
             }
+            if (mdp.IsPresented)
+                mdp.IsPresented = false;
         }
 
         private Dictionary<MenuPageItemType, Page> _pages = new Dictionary<MenuPageItemType, Page>();

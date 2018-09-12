@@ -13,9 +13,10 @@ namespace XamMaket.Views
         {
             MasterBehavior = MasterBehavior.Popover;
 
-            Master = new MenuPage(ViewModel.Menu);
+            Master = new MenuPage();
+            Master.SetBinding(Page.BindingContextProperty, nameof(ViewModel.Menu));
 
-            Detail = new DetailPage();
+            Detail = new ContentPage();
         }
     }
 }

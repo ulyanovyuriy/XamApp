@@ -4,16 +4,15 @@ using System.Linq;
 using System.Text;
 
 using Xamarin.Forms;
+using XamMaket.Services;
 using XamMaket.ViewModels;
 
 namespace XamMaket.Views
 {
     public partial class MainPage : MasterDetailPage
     {
-        public MainPage(MainPageViewModel viewModel)
+        public MainPage()
         {
-            BindingContext = viewModel ?? throw new ArgumentNullException(nameof(viewModel));
-
             Init();
         }
 

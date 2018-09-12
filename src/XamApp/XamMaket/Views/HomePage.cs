@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 
 using Xamarin.Forms;
+using XamMaket.ViewModels;
 
 namespace XamMaket.Views
 {
@@ -13,5 +14,7 @@ namespace XamMaket.Views
         {
             Init();
         }
+
+        public HomePageViewModel ViewModel => BindingContext as HomePageViewModel;
     }
 }
