@@ -13,7 +13,19 @@ namespace XamMaket
         {
             Init();
 
-            MainPage = new NavPage(new MainPage(new MainPageViewModel()));
+            MainPage = new MainPage(new MainPageViewModel());
+        }
+
+        public new MainPage MainPage
+        {
+            get
+            {
+                return base.MainPage as MainPage;
+            }
+            set
+            {
+                base.MainPage = value;
+            }
         }
 
         public T GetResource<T>(string key)
